@@ -60,7 +60,7 @@ This component tracks which global exit roots have been imported. It helps the b
 
 Once all components are implemented, the network should be connected to the unified LxLy bridge. However, keep in mind:
 
-- Outgoing bridges should work with current tools and UIs, but incoming bridges may not. When using the claim sponsor, things should just work. However, the claim sponsor is optional... The point being that the existing UIs are built to send EVM transactions to make the claim in the absence of claim sponsor. So any claim interaction beyond the auto-claim functionality will need UIs and tooling that are out of the sope of the CDK.
+- Outgoing bridges should work with current tools and UIs, but incoming bridges may not. When using the claim sponsor, things should just work. However, the claim sponsor is optional... The point being that the existing UIs are built to send EVM transactions to make the claim in the absence of claim sponsor. So any claim interaction beyond the auto-claim functionality will need UIs and tooling that are out of the scope of the CDK.
 - Bridging assets/messages to another network is specific to the integrated system. You'll need to create mechanisms to interact with the *bridge smart contract* of your service for these actions.
 - We’re moving towards an *in-CDK* bridge service (spec [here](https://hackmd.io/0vA-XU2BRHmH3Ab0j4ouZw)), replacing the current separate service ([here](https://github.com/0xPolygonHermez/zkevm-bridge-service)). There's no stable API yet, and SDKs/UIs are still in development.
 
